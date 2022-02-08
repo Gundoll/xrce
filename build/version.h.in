@@ -1,0 +1,11 @@
+#ifndef __xrce_version_h__
+#define __xrce_version_h__
+#define XRCE_MAJOR_VERSION		1
+#define XRCE_MINOR_VERSION		0
+#define XRCE_MICRO_VERSION		0
+#define XRCE_REVISION			$WCREV$
+#define XRCE_REVISION_DATETIME	$WCDATE$
+#define QUOTE_(x)	#x
+#define QUOTE(x)	QUOTE_(x)
+#define XRCE_VERSION	QUOTE(XRCE_MAJOR_VERSION.XRCE_MINOR_VERSION.XRCE_MICRO_VERSION(Rev XRCE_REVISION - XRCE_REVISION_DATETIME))
+#endif
